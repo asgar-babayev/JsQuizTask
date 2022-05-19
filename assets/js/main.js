@@ -82,10 +82,13 @@ function TimeUp() {
         let localcount = JSON.parse(localStorage.getItem("count"));
         document.querySelector("span").innerText = `Secondary: ${localcount}`;
         if (localcount == 0) {
+            count = 0;
+            btnStart.disabled = false;
+            btnNext.disabled = true;
+            btnSubmit.disabled = true;
             clearInterval(x);
             document.querySelectorAll(".btns").forEach(x => x.disabled = true);
             swal(`Time is up`, "info");
-            btnStart.disabled = false;
         }
         document.querySelectorAll(".btns").forEach(y => {
             y.addEventListener("click", function () {
@@ -125,6 +128,8 @@ btnStart.addEventListener("click", function () {
     let second = document.querySelector(".second").value;
     let question = document.querySelector(".ques").value;
     if (second.trim() != "" && question.trim() != "") {
+        count = 0;
+        document.querySelector("h4").innerText = `Score: ${count}`;
         this.disabled = true;
         nextCount = document.querySelector(".ques").value;
         GetFirstQuestion();
