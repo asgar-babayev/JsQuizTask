@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 100%;
+}
+
+#btnNext{
+    margin-top: 2%;
+    margin-left: 24.7%;
+    margin-right: 24.7%;
+}
+
+#btnSubmit{
+    margin-top: 2%;
+    margin-left: 24.7%;
+    margin-right: 24.7%;
+}
+
+.ques{
+    margin-left: 1%;
+    margin-right: 1%;
+}

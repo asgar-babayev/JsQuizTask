@@ -1,0 +1,57 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex flex-column mt-5">
+            <div class="d-flex justify-content-center mt-4">
+                <div class="w-50 d-flex gap-5">
+                    <h4 class="text-nowrap">Score: 0</h4>
+                    <span class="count">Secondary: 0</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-1">
+                <div class="w-50 mb-2 d-flex">
+                    <input type="number" min="1" class="second" placeholder="Enter second">
+                    <input type="number" min="1" class="ques" placeholder="Enter question count">
+                    <button class="btn btn-danger ques text-nowrap" id="btnStart">Start</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img width="650" height="350" src="" alt="">
+            </div>
+            <div class="d-flex justify-content-center mt-4 mb-2 gap-2">
+                <button id="btnA" class="btn btns btn-secondary w-25"></button>
+                <button id="btnB" class="btn btns btn-secondary w-25"></button>
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+                <button id="btnC" class="btn btns btn-secondary w-25"></button>
+                <button id="btnD" class="btn btns btn-secondary w-25"></button>
+            </div>
+            <button id="btnNext" class="btn btn-success text-white text-nowrap">Next</button>
+            <button id="btnSubmit" class="btn btn-info text-white text-nowrap d-none">Submit</button>
+
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
